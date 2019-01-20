@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <title>flexbox</title>
+
+    <style>
+
+    
+     header nav{
+        background-color: #23624b;
+        width: 1349px;
+        height: 60px;
+        margin-left: -8px;
+        margin-top: -16px;
+}
+     
+     header nav ul{
+        display:flex;
+        justify-content:space-evenly;
+        line-height:60px;
+     }
+     ul li{
+         list-style:none;
+    
+     }
+     header nav ul li ul{
+        display:flex;
+        flex-direction:column;
+        
+    
+    }
+    header nav ul li ul li{
+        margin-left: -32px;
+        background-color:aqua;
+        width: 79px;
+        display:none;
+    
+    }
+    header nav ul li ul li a{
+         padding: 6px;
+    }
+    
+
+     ul li a{
+        text-decoration: none;
+        color: #ffff;
+        font-weight: bold;
+        letter-spacing: 5px;
+        word-spacing: -1px;
+        font-size: 17px;
+     }
+     h2 ,a{
+        margin: 0 auto;
+        color: darkslategray;
+        text-decoration: none;
+        }
+    
+    ul li a:active{
+        display: block;
+        border-bottom: 2px solid greenyellow;
+    }
+     ul li a:hover{
+        display: block;
+        border-bottom: 2px solid greenyellow;
+     }
+     img {
+        border-radius: 20px;
+        background-position: 100% 100%;
+     }
+     .intro{
+        padding-top: 40px;
+     }
+     span{
+        display: block;
+        color:white;
+        font-size: 36px;
+        margin-top: -23px
+     }
+     button{
+         background-color: #318b6a;
+         cursor:pointer;
+         width:105px;
+         height:45px;
+         border:2px solid #318b6a;
+         border-radius:10px;
+         font-size: 19px;
+     }
+     button a:hover{
+        color: #26d83e;
+     }
+     .color{
+        color:white;
+
+     }
+     .photo{
+        display: flex;
+        flex-direction: row;
+        margin-top: -18px;
+        width: 1349px;
+        margin-left: -8px;
+        background-color: #3dae84;
+    }
+    h1,p{
+        color: white;
+        font-size: 26px;
+        font-family: Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+        font-weight: 600
+    }
+    h3{    
+        font-size:30px;
+        -webkit-text-stroke: 2px #239fec;
+        letter-spacing: 5px;
+        display: table;
+        margin: 18px auto;
+        color: #151313;
+        letter-spacing: 10px;
+        word-spacing: 5px;
+        }
+
+    .connect{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1350px;
+        height: 324px;
+        background-color:#a7f9d1;;
+        margin-left: -9px;
+            }
+    
+    .fa-facebook-square {
+        font-size: 10em;
+        margin: 14px auto;
+        color:#6baff6;
+    }
+    .fa-linkedin-square {
+        font-size: 10em;
+        margin: 14px auto;
+        color: #0077b5;
+    }
+    .fa-instagram {
+        font-size: 10em;
+        margin: 14px auto;
+        color: #e4405f;
+    }
+    .facebook{
+        width: 392px;
+        height: 250px;
+        background-color: #ffff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        box-shadow: 0px 1px 12px 3px #6baff6;
+        } 
+    .linkedin{
+            width: 392px;
+            height: 250px;
+            background-color: #ffff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            box-shadow: 0px 1px 12px 3px #0077b5;
+    }
+    .instagram{
+            width: 392px;
+            height: 250px;
+            background-color: #ffff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            box-shadow: 0px 1px 12px 3px #e4405f;
+    }
+
+  .contact-me{
+       display: flex;
+  }  
+.sign-up{
+    background-color:#f2fff2;;
+    width: 700px;
+    height: 520px;
+    margin-left: -6px;  
+    border-right: 4px dashed #87c391; 
+}
+h4{
+    text-align: center;
+    font-family: "sofia-pro","Roboto","Helvetica","Arial",sans-serif;
+    font-size: 26px;
+    color: darkgreen;
+    margin-top: 0px;
+    padding-top: 36px;
+}
+    form{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -2px 1px 6px 6px #21212136;
+    margin: 0 auto;
+    width: 400px;
+    height: 384px;
+    
+}
+
+form input{
+    width: 285px;
+    height: 34px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 4px;
+    display: block;
+    margin: 34px auto;
+}
+
+.com{
+
+    width:135px;
+    height:33px;
+    display:inline-block;
+    margin-right:0px;
+}
+
+
+
+ button.colr{
+    background-color: #a9dd7d;
+    margin-left: 143px;
+    margin-top: 14px;
+    color: whitesmoke;
+    font-family: cursive;
+    border: 2px solid #a9dd7d;
+    font-weight: bold;
+}
+::-webkit-input-placeholder{
+       color:#167447;
+        text-align:center;
+        font-weight: bolder;
+        font-size: 15px;
+
+}
+
+::-webkit-input-required{
+        border-color:lightgreen;
+}
+input{
+     caret-color: #09e47b;
+}
+
+input:valid{
+    border:solid lightgreen 2px;
+}
+input:invalid{
+    border:solid red 2px;
+}
+textarea{
+    width: 281px;
+    height: 134px;
+    resize: horizontal;
+    border: 3px dashed lightgreen;
+    color: darkgreen;
+    font-size: 16px;
+    margin-left: 51px;
+    text-align: center;
+}
+iframe{
+    width: 650px;
+    height: 520px;
+    margin-right: -8px;
+    border-left: 5px dashed #a2caa2;
+}
+   ::selection{
+       background-color:lightgreen;
+       color:black;
+  }
+
+    @media(min-width:768px){
+
+    
+    }
+    @media(max-width:760px)
+    {
+    header nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 45px;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -37px;
+    }
+    header nav {
+        color: black;
+        width: 354px;
+        height: 225px;
+        margin-left: -8px;
+    }
+    /*.connect{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }*/
+    }
+
+    @media(min-width:375px)  and (max-width:760px){
+        header nav{ 
+            width: 406px;
+            margin-left: -6px;
+}
+    }
+   
+    
+    
+    @media(max-width:320px){
+
+        figure{
+            margin-left: 10px;
+        }
+        .side{
+            margin-left: -6px;
+        }
+        h3{
+            margin-right: -38px;
+        }
+    }
+
+    @media(min-width:360px) and (max-width:380px){
+
+        header nav{ 
+            width: 406px;
+            margin-left: -6px;
+            }
+
+    figure{
+        margin-left:12px;
+    }
+    h3{
+        padding-left: 50px;
+    }
+    .photo{
+        width: 374px;
+    }
+    .connect {
+        width: 414px;
+        padding-right:-6px;
+    }
+    .sign-up {
+        width: 414px;   
+    }
+    }
+   @media (max-width:425px)
+   {
+     .photo{
+        flex-direction: column;
+        height: 780px;
+        width:406px;       
+        margin-left: -6px;
+      }
+      figure{
+        margin: 30px auto;
+      }
+      .intro{
+        display: flex;
+         flex-direction: column;
+      }
+      span{
+        text-align: center;
+      }
+      h1{
+          text-align: center;
+      }
+      .side{
+        font-size: 20px;
+        width: 317px;
+        text-align: center;
+        padding-left: 33px;;
+
+      }
+      button{
+        margin: 0 auto;
+       }
+       h3{
+        font-size: 18px;
+        letter-spacing: 7px;
+        text-align: center;
+        word-spacing: -1px;
+       }
+       .connect{
+        flex-direction: column;
+        height: 900px;
+        width: 406px;
+        margin-left: -4px;
+       }
+       .facebook {
+        margin: 40px auto;
+        width: 340px;
+         }
+         .linkedin {
+        margin: 40px auto;
+        width: 340px;
+         }
+         .instagram {
+        margin: 40px auto;
+        width: 340px;
+         }
+         .contact-me {
+        display: flex;
+        flex-direction: column;
+        }
+        .sign-up {
+            width: 406px;
+            border-bottom: 4px dashed #87c391;
+            margin-left: -6px;
+            border-right:none;
+             }
+        form{
+            width:370px;
+             }
+        textarea{
+            margin-left: 39px;
+        }
+        iframe {
+            width: 406px;
+            height: 400px;
+            margin-left: -5px;
+            }
+   }
+    </style>
+    <script>
+    function dis(){
+        document.getElementById("hidden")
+
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <header class="nav-bar id="hidden"">
+       <nav>
+          <ul>
+              <li><a href="#first">ABOUT ME <i class="fa fa-user" aria-hidden="true"></i></a></li>
+              <li><a href="#second">CONNECT WITH ME <i class="fa fa-link" aria-hidden="true"></i></a></li>
+              <li><a href="#contact">CONTACT <i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </li>
+              <li><a href=""  download>RESUME <i class="fa fa-download" aria-hidden="true"></i>  </a></li>
+              <li><a href="https://github.com/adarshsharma27">GITHUB <i class="fa fa-github" aria-hidden="true"></i></a></li>
+          </ul>
+        </nav>
+    </header>
+    <br>
+   <div class="photo">
+        <figure>
+      <img src="C:\Users\user\Desktop\adarsh.jpg" alt="myphoto" width=300px height=300px>
+    </figure>
+    <div class="intro" id="first">
+    <span>Hello my name is ,</span>
+   <h1>ADARSH SHARMA</h1> 
+   <p class="side">I am a FRONTEND DEVELOPER/ENGINNER I enjoy spending time for enhancing  my Web Development skills and making new and small project. </p>
+        <button><a href="#contact" class="color">Hire Me </a></button>
+                </div>  
+                     </div>   
+    <!--  heading for connect with me start-->
+     <h3>CONNECT WITH ME</h3>
+    <!--  heading for connect with me end-->
+    <!--connnect with me start -->
+    <div class="connect" id="second">
+            <div class="facebook">
+                <i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i>
+                <h2> <a href="https://www.facebook.com/profile.php?id=100014281110433">FACEBOOK</a></h2>
+                                            </div>
+              <div class="linkedin">
+                <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+                <h2><a href="https://www.linkedin.com/in/adarsh-sharma-b025b5178">LINKEDIN </a></h2>
+                      </div>
+                      <div class="instagram">
+                        <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                        <h2><a href="https://www.instagram.com/frontendadarsh/?hl=en">INSTAGRAM </a></h2>
+                              </div>
+                                                     </div>
+    <!-- connect with me end-->
+    <!--contact  start-->
+    <div class="contact-me" id="contact">
+            <div class="sign-up">
+                    <h4>CONTACT ME</h4>
+                        <form class="" method="post" netlify>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password" >
+                            <textarea > Message me</textarea>
+                            <button class="colr"> Log In</button>
+                            <div netlify-recaptcha></div>
+                                     </form>
+                                        </div>
+            <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27925.57179292332!2d77.6938737!3d28.96672590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c645da0785f07%3A0x6f58c59af3ce3218!2sBrahmpuri%2C+Meerut%2C+Uttar+Pradesh+250002!5e0!3m2!1sen!2sin!4v1545905821277" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                            </div>                            
+                                             </div> 
+                                 
+</body>
+</html>
